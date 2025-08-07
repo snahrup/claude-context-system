@@ -1,0 +1,45 @@
+graph TB
+    subgraph "Claude Desktop"
+        CD[Claude Desktop App]
+        MCP[MCP Protocol]
+    end
+    
+    subgraph "Claude Context System"
+        Server[MCP Server]
+        Handler[Command Handler]
+        NotionAPI[Notion Integration]
+        Config[Configuration]
+    end
+    
+    subgraph "Notion Workspace"
+        PDB[(Projects Database)]
+        CSDB[(Chat Summaries Database)]
+    end
+    
+    subgraph "User Commands"
+        Save["/save"]
+        New["/new"]
+        Status["/status"]
+        Context["Session ID"]
+    end
+    
+    CD <--> MCP
+    MCP <--> Server
+    Server --> Handler
+    Handler --> NotionAPI
+    NotionAPI <--> PDB
+    NotionAPI <--> CSDB
+    Server --> Config
+    
+    Save --> CD
+    New --> CD
+    Status --> CD
+    Context --> CD
+    
+    style CD fill:#4A90E2,stroke:#333,stroke-width:2px,color:#fff
+    style Server fill:#7CB342,stroke:#333,stroke-width:2px,color:#fff
+    style PDB fill:#9C27B0,stroke:#333,stroke-width:2px,color:#fff
+    style CSDB fill:#9C27B0,stroke:#333,stroke-width:2px,color:#fff
+    
+    classDef command fill:#FF5722,stroke:#333,stroke-width:2px,color:#fff
+    class Save,New,Status,Context command

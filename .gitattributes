@@ -1,0 +1,29 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly declare text files
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Denote all files that are truly binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Language statistics
+*.md linguist-documentation
+*.mmd linguist-documentation
+demo/* linguist-documentation
+docs/* linguist-documentation
+
+# Highlight important files
+README.md linguist-detectable
+src/mcp-server/*.js linguist-detectable

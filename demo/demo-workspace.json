@@ -1,0 +1,65 @@
+{
+  "workspace": {
+    "name": "Claude Context System Demo",
+    "description": "Demo workspace showcasing the Claude Context System capabilities",
+    "created": "2025-08-02",
+    "version": "1.0.0"
+  },
+  "databases": {
+    "projects": {
+      "name": "Projects",
+      "description": "Track all your development projects",
+      "icon": "🏗️",
+      "properties": {
+        "Project name": "title",
+        "Status": "status",
+        "Goal": "rich_text",
+        "Priority": "select",
+        "Start date": "date",
+        "End date": "date",
+        "Tasks": "relation",
+        "Related Chats": "relation"
+      }
+    },
+    "chatSummaries": {
+      "name": "Chat Summaries",
+      "description": "Automatic conversation tracking",
+      "icon": "💬",
+      "properties": {
+        "Chat Title": "title",
+        "Session ID": "rich_text",
+        "Date": "date",
+        "Summary": "rich_text",
+        "Key Decisions": "rich_text",
+        "Next Actions": "rich_text",
+        "Project": "relation",
+        "Tags": "multi_select",
+        "Priority": "select",
+        "Context Status": "select",
+        "Is Most Recent": "checkbox"
+      }
+    }
+  },
+  "sampleData": {
+    "projects": [
+      {
+        "name": "E-Commerce Platform Redesign",
+        "status": "In progress",
+        "goal": "Modernize the user interface and improve conversion rates",
+        "priority": "High"
+      },
+      {
+        "name": "Mobile App Development",
+        "status": "Not started",
+        "goal": "Create a React Native app for iOS and Android",
+        "priority": "Medium"
+      },
+      {
+        "name": "API Integration Suite",
+        "status": "Done",
+        "goal": "Build comprehensive API integrations for third-party services",
+        "priority": "Low"
+      }
+    ]
+  }
+}

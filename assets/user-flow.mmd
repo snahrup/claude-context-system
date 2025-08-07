@@ -1,0 +1,17 @@
+graph LR
+    subgraph "Your Workflow"
+        A[Start Conversation] --> B{Context Needed?}
+        B -->|New Chat| C[Auto-creates Summary]
+        B -->|Continue| D[Paste Session ID]
+        D --> E[Context Restored]
+        C --> F[Work on Project]
+        E --> F
+        F --> G[Type /save]
+        G --> H[Context Preserved]
+        H --> I[Ready for Next Session]
+    end
+    
+    style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
+    style G fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
+    style H fill:#9C27B0,stroke:#333,stroke-width:2px,color:#fff
+    style I fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff

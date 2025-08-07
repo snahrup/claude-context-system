@@ -1,0 +1,34 @@
+{
+  "name": "claude-context-system",
+  "version": "1.0.0",
+  "description": "Transform your AI workflow with seamless context management between Claude Desktop and Notion",
+  "main": "src/mcp-server/index.js",
+  "scripts": {
+    "start": "node src/mcp-server/index.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "setup": "node scripts/install.js",
+    "health-check": "node scripts/health-check.js"
+  },
+  "keywords": [
+    "claude",
+    "mcp",
+    "notion",
+    "ai",
+    "context-management",
+    "productivity"
+  ],
+  "author": "Steven White",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snahrup/claude-context-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/snahrup/claude-context-system/issues"
+  },
+  "homepage": "https://github.com/snahrup/claude-context-system#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
