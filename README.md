@@ -64,7 +64,7 @@ graph TB
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/claude-context-system.git
+git clone https://github.com/snahrup/claude-context-system.git
 cd claude-context-system
 
 # Run the automated setup
@@ -81,6 +81,8 @@ That's it! The installer will:
 - ✅ Set up Notion integration
 - ✅ Create demo workspace
 - ✅ Verify everything works
+  
+Template URL: https://short-sidecar-46e.notion.site/Claude-Context-Template-244632e81d3a811c9936fe3021eb5ce9
 
 ## 📋 Requirements
 
