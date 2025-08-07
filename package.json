@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/snahrup/claude-context-system.git"
+    "url": "git+https://github.com/snahrup/claude-context-system.git"
   },
   "bugs": {
     "url": "https://github.com/snahrup/claude-context-system/issues"
